@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exam</title>
+    
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body >
+   <nav class="navbar d-flex position-fixed top-0 h-100  p-0" id="navbar">
+    
+     <div class="nav-list bg-black vh-100 ps-2 py-4 d-flex flex-column justify-content-between" id="navList">
+          <ul class="ps-3 list">
+            <li ><a href="#" id="NowPlaying">Now Playing</a></li>
+            <li ><a href="#" id="Popular">Popular</a></li>
+            <li ><a href="#" id="TopRated">Top Rated</a></li>
+            <li ><a href="#" id="Trending">Trending</a></li>
+            <li ><a href="#" id="Upcoming">Upcoming</a></li>
+            <li ><a href="#contact" id="ContactUs">Contact us</a></li>
+          </ul>
+          <div class="div">
+          <div class="icons d-flex">
+            <li><a href="#"><i class="fa fa-facebook-f pe-3"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter  pe-3"></i></a></li>
+            <li><a href="#"><i class="fas fa-globe"></i></a></li>   
+         </div>
+         <p class="text-white">Copyright <span>&copy</span> 2019 All Rights Reserved.</p>
+        </div>
+     </div>
+     
+     <div class="nav-btn bg-white vh-100  d-flex flex-column justify-content-around align-items-center" id="#navIcons">
+       <img src="images/logo.png" class="logo" alt="">
+        <li id="toggle"><i class="barBtn fa-solid fa-bars" id="toggle-btn"></i></li>
+        <li id="xMark"><i class=" fa-solid fa-xmark" id="xbtn"></i></li>
+        <div>
+            <li><i class="fas fa-globe mb-3"></i></li>  
+            <li><i class="fas fa-share-alt"></i> </li>
+        </div>
+    </div>
+
+   </nav>
+   <section class="my-5">
+     <div  class="container movie-content">
+        <div class="search-field d-flex justify-content-between py-5">
+            <input type="text" class=" form-control" id="searchMovie" placeholder="Get movies by word...">  
+            <input type="text" class="form-control" id="movieSearch" placeholder="Search...">  
+        </div>
+           <div class="row gy-4" id="moviesGrid"></div>
+     </div>
+   </section>
+   <footer id="contact" class="py-3">
+    <div class="container">
+        <h2 class="text-white">ContactUs...</h2>
+        <div class="row py-3 gy-2">
+         <div class="col-md-6">
+            <div class="item">
+                <div class="mb-3">
+                    <input type="text" class="inputform form-control" id="name" placeholder="Enter Your Name"> 
+                    <div id="alertName" class="inputform alert alert-danger mt-2">Invalid Name</div>  
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="inputform form-control" id="phone" placeholder="Enter Phone"> 
+                    <div id="alertPhone" class="alert alert-danger mt-2">Invalid Phone Number</div>  
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="inputform form-control" id="password" placeholder="Enter Password">
+                    <div id="alertPassword" class="alert alert-danger mt-2">Invalid Password, at least 8 character including number letter special character</div>     
+                </div>
+             </div>
+         </div>
+         <div class="col-md-6">
+            <div class="item">
+                <div class="mb-3">
+                    <input type="Email" class="inputform form-control" id="email" placeholder="Enter Email">
+                    <div id="alertEmail" class="alert alert-danger mt-2">Invalid Email</div>     
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="inputform form-control" id="age" placeholder="Enter Age">   
+                    <div id="alertAge" class="alert alert-danger mt-2">Age range : 18-80</div>   
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="inputform form-control" id="RePassword" placeholder="Enter RePassword">   
+                    <div id="alertRePassword" class="alert alert-danger mt-2">Invalid Password</div> 
+                    <div id="alertRePasswordInvalid" class="alert alert-danger mt-2">Rentered password is not equivalent to first password</div>  
+                </div>
+             </div>
+         </div>
+     
+        </div>
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-3">
+                    <button class="btn btn-outline-danger" type="submit" id="submit">Submit</button>
+                </div>
+                <div class="col-md-9">
+                  <div id="alertEmptyMessage" class="alert alert-danger mt-3 w-50 fs-4">Please Fill all required fields</div>
+                    <div id="alertSuccessfulMessage" class="alert alert-success mt-3 w-50 fs-4">Form successfully Sent</div>  
+                </div>
+            </div>
+      
+        
+        </div> 
+       
+    </div>
+   </footer>
+ 
+
+
+
+
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/88efa2d0a1.js" crossorigin="anonymous"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script type="module" src="js/main.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>
+
+
